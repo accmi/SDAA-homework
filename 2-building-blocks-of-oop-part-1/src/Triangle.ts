@@ -8,10 +8,6 @@ enum TriangleType {
 }
 
 export class Triangle extends Shape {
-  protected postInitialize(): void {
-    console.info('Triangle is initialized');
-  }
-
   constructor(point1: Point, point2: Point, point3: Point);
   constructor(point1: Point, point2: Point, point3: Point, color?: string, filled?: boolean) {
     super([point1, point2, point3]);
