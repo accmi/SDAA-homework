@@ -10,12 +10,7 @@ enum TriangleType {
 export class Triangle extends Shape {
   constructor(point1: Point, point2: Point, point3: Point);
   constructor(point1: Point, point2: Point, point3: Point, color?: string, filled?: boolean) {
-    super([point1, point2, point3]);
-
-    /** if I run this I get this error: Expected 1 arguments, but got 3.
-    * Not clear for me why overloaded constructor in superclass doesn't work
-    */
-    // super([point1, point2, point3], color, filled);
+    super([point1, point2, point3], color, filled);
   }
 
   toString(): string {

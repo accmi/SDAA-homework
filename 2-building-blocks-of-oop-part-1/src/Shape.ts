@@ -9,6 +9,7 @@ export abstract class Shape {
     points: Point[];
 
     constructor(points: Point[]);
+    constructor(points: Point[], color?: string, filled?: boolean)
     constructor(points: Point[], color?: string, filled?: boolean) {
         if (points.length < 3) {
             throw('There should be more then 2 points');
