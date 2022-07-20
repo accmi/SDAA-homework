@@ -3,6 +3,7 @@ import { Point } from '../src/point';
 
 describe('Point', () => {
     it('should not fail to be created', () => {
+        expect(new Point().toString()).toEqual('(0, 0)');
         expect(new Point(0, 0).toString()).toEqual('(0, 0)');
         expect(new Point(1, 2).toString()).toEqual('(1, 2)');
     });
